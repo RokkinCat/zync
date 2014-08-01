@@ -9,7 +9,7 @@ gem 'puma'
 # gem 'trinidad', :platform => 'jruby'
 
 # Optional JSON codec (faster performance)
-# gem 'oj'
+# 
 
 # Project requirements
 gem 'rake'
@@ -32,11 +32,4 @@ gem 'padrino', '0.12.0'
 gem 'rack-cors'
 gem 'foreman'
 gem 'rabl'
-
-# Or Padrino Edge
-# gem 'padrino', :github => 'padrino/padrino-framework'
-
-# Or Individual Gems
-# %w(core gen helpers cache mailer admin).each do |g|
-#   gem 'padrino-' + g, '0.12.0'
-# end
+gem 'oj'
