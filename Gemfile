@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'puma'
 
 # Distribute your app as a gem
 # gemspec
@@ -17,13 +18,20 @@ gem 'rake'
 gem 'haml'
 gem 'pg'
 gem 'sequel'
+gem 'shield', :github => "RokkinCat/shield"
+gem 'scrypt', :require => 'scrypt'
 
 # Test requirements
-gem 'rspec', :group => 'test'
-gem 'rack-test', :require => 'rack/test', :group => 'test'
+group :development, :test do
+	gem 'rspec'
+	gem 'rack-test', :require => 'rack/test'
+end
 
 # Padrino Stable Gem
 gem 'padrino', '0.12.0'
+gem 'rack-cors'
+gem 'foreman'
+gem 'rabl'
 
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'
